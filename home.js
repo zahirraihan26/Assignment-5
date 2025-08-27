@@ -18,9 +18,9 @@ const callButton = document.querySelectorAll('.bttn-call');
 
 for (let button of callButton) {
     button.addEventListener('click', function () {
-        const commomcard = button.closest('.card');
-        const helplineName = commomcard.querySelector('p').innerText; 
-        const helplineNumber = commomcard.querySelector('h3').innerText; 
+        const commoncard = button.closest('.card');
+        const helplineName = commoncard.querySelector('p').innerText; 
+        const helplineNumber = commoncard.querySelector('h3').innerText; 
         console.log(helplineName, helplineNumber);
 
         const coine = getcoinNumber('coin-num');
@@ -102,6 +102,7 @@ let heartNumber = 0;
 const haertClick = document.getElementsByClassName("hart-img");
 
 for (let click of haertClick) {
+    console.log("ok")
   click.addEventListener("click", function () {
     heartNumber++;
     
