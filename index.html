@@ -7,22 +7,57 @@
    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
 
     <!-- daseiy ui cdn  -->
+     
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
     <!-- font-awesome cdn  -->
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
+</head>     
 <body>
     <header>
-        <nav>
-            <div class="flex items-center gap-3 p-4 mx-auto w-11/12">
-                <img src="./assets/logo.png" alt="" class="w-20 h-20">
+        <nav class="flex flex-col md:flex-row justify-between items-center px-4 md:px-8 py-4 bg-white">
+            <div class="flex items-center gap-2 p-4 ">
+                <img src="./assets/logo.png" alt="" class="w-15 h-15">
 
-                <p class="text-green-500">Emergency <br>service</p>
+                <p class="text-[#006747] font-bold text-2xl">Emergency <br>service</p>
 
+            </div>
+            <div class="flex items-center gap-3">
+                <!-- hart shape  -->
+             <div class="flex items-center justify-center gap-2 bg-[#41ff6b1a] px-6 py-2 rounded-3xl">
+                <P class="font-bold text-xl"><span>0</span></P>
+                <img src="./assets/heart.png" alt="" class="w-7 h-7 ">
+             </div>
+                <!-- token shape  -->
+             <div class="flex items-center justify-center gap-2 bg-[#41ff6b1a] px-6 py-2 rounded-3xl">
+                <P class="font-bold text-xl"><span>100</span></P>
+                <img src="./assets/coin.png" alt="" class="w-7 h-7 ">
+             </div>
+             <!-- coppy  -->
+             <div class="flex items-center justify-center gap-1 bg-[#00A63E] p-3 rounded-full">
+                <P class="font-bold text-xl text-white"><span>2</span></P>
+                <p class="font-bold text-xl text-white">copy</p>
+             </div>
             </div>
         </nav>
     </header>
+    <!-- banner  -->
+     <section  class="bg-gradient-to-r from-[#013223] to-[#006747]  text-center py-10 px-4">
+
+        <img src="./assets/logo-dark.png" alt="" class="mx-auto w-16 h-16 md:w-20 md:h-20 mb-4">
+
+        <h1  class="text-white text-xl md:text-3xl font-bold">Emergency Service Directory</h1>
+        <p class="text-white mt-2 text-sm md:text-base max-w-2xl mx-auto px-2">Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh</p>
+
+     </section>
+
+     <!-- box sec tion  -->
+      <main>
+        <section>
+
+            
+        </section>
+      </main>
 </body>
 </html>
