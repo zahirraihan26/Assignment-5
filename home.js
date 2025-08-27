@@ -74,7 +74,25 @@ document.getElementById('btn-clear')
 })
 
 
+// copy button related style-------------------------
+let copyCount = 0;
+const copyButtons = document.querySelectorAll('.btn-copy');
 
+for (let button of copyButtons) {
+  button.addEventListener('click', function () {
+    const card = button.closest('.card');
+    const serviceNumber = card.querySelector('h3').innerText;
+
+   navigator.clipboard.writeText(serviceNumber);
+
+    alert("Number copied: " + serviceNumber);
+    copyCount++;
+    
+  document.getElementById('copy').innerText = copyCount;
+   
+   
+  });
+}
 
 
 
