@@ -31,7 +31,7 @@ for (let button of callButton) {
         }
         const totalCoin = coine - 20;
         setCoinNumber('coin-num', totalCoin);
-        alert('📞 Calling ' + helplineName + ' (' + helplineNumber + ')...');
+        alert('📞 Calling ' + helplineName + ' (' + helplineNumber + ')');
 
 
 
